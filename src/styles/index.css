@@ -10,6 +10,7 @@ body {
   background-color: whitesmoke;
 }
 
+header,
 section {
   margin-bottom: 2.5rem;
 }
