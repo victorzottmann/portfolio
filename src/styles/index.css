@@ -10,12 +10,6 @@ body {
   background-color: whitesmoke;
 }
 
-.page {
-  background-color: white;
-  padding: 1rem 2rem;
-  min-height: 100vh;
-}
-
 section {
   margin-bottom: 2.5rem;
 }
@@ -37,6 +31,12 @@ a:hover {
   cursor: pointer;
   color: var(--clr-blue-accent);
   text-decoration: underline;
+}
+
+.page {
+  background-color: white;
+  padding: 1rem 2rem;
+  min-height: 100vh;
 }
 
 .profile {
