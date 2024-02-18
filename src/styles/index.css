@@ -1,6 +1,7 @@
 body {
   width: 800px;
   margin: auto;
+  padding: 1rem;
 }
 
 section {
@@ -11,12 +12,27 @@ h2 {
   margin-bottom: 1.5rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+}
+
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .profile__picture {
@@ -35,9 +51,29 @@ h2 {
   gap: 10px;
 }
 
-.projects__type {
+.social-media__link {
+  text-decoration: none;
+  color: black;
+}
+
+.projects__category {
   display: flex;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+
+.projects__category a:first-child {
+  color: #0000ee;
+}
+
+.projects__category a {
+  text-decoration: underline;
+}
+
+.projects__category span {
+  font-size: 1.7rem;
+  text-decoration: none;
 }
 
 .projects {
@@ -48,11 +84,11 @@ h2 {
 
 .card {
   display: flex;
-  flex-basis: calc(50% - 1.2rem);
+  flex-basis: calc(50% - 1rem);
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 2.3rem;
-  height: 12rem;
+  margin-bottom: 2rem;
+  height: 12.5rem;
   padding: 1.5rem;
   border: 1px solid lightgray;
   border-radius: .8rem;
@@ -60,18 +96,17 @@ h2 {
 
 .card:nth-child(1),
 .card:nth-child(2) {
-  margin-top: 1.2rem;
+  margin-top: 1.3rem;
 }
 
 .card__link {
   display: flex;
-  font-size: 1.1rem;
   justify-content: space-between;
 }
 
 .card__link__preview {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .icon {
@@ -80,8 +115,5 @@ h2 {
 
 .icon.preview {
   width: 15px;
-}
-
-.dot-separator {
-  width: 5px;
+  margin-bottom: 5px;
 }
