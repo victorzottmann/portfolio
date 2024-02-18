@@ -1,6 +1,7 @@
 :root {
   --clr-blue-accent: #457B9D;
   --clr-blue-bg: #E3ECF3;
+  --clr-gray: #71717A;
   --clr-orange: #F35627;
 }
 
@@ -87,12 +88,12 @@ a:hover {
 }
 
 .projects__category a:first-child {
-  color: #457B9D;
+  color: var(--clr-blue-accent);
   text-decoration: underline;
 }
 
 .projects__category a:hover {
-  color: #457B9D;
+  color: var(--clr-blue-accent);
   text-decoration: underline;
 }
 
@@ -120,7 +121,7 @@ a:hover {
 }
 
 .card:hover {
-  border-color: #457B9D;
+  border-color: var(--clr-blue-accent);
 }
 
 
@@ -129,11 +130,15 @@ a:hover {
   margin-top: 1.3rem;
 }
 
+.card__description {
+  color: var(--clr-gray);
+}
+
 .card__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #457B9D;
+  color: var(--clr-blue-accent);
 }
 
 .card__link__demo {
@@ -142,8 +147,8 @@ a:hover {
   gap: 10px;
   border-radius: 100px;
   padding: 10px 20px;
-  background-color: #E3ECF3;
-  color: var(--clr-blue);
+  background-color: var(--clr-blue-bg);
+  color: var(--clr-blue-accent);
 }
 
 .card__link__code {
