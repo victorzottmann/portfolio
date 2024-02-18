@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".projects__category__link").forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault();
       const category = e.target.textContent;
       showProjects(category);
     });
   });
 
+  // default state
   showProjects("Programming Projects");
 });
