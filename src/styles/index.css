@@ -39,6 +39,16 @@ a:hover {
   align-items: center;
   gap: 1.5rem;
   margin-top: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.profile__title {
+  font-size: 1.2rem;
+}
+
+.profile__title p {
+  font-size: 1.2rem;
 }
 
 .profile__picture {
