@@ -29,6 +29,7 @@ a {
 
 a:hover {
   cursor: pointer;
+  color: var(--clr-blue-accent);
   text-decoration: underline;
 }
 
