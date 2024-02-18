@@ -1,5 +1,11 @@
+:root {
+  --clr-blue-accent: #457B9D;
+  --clr-blue-bg: #E3ECF3;
+  --clr-orange: #F35627;
+}
+
 body {
-  width: 800px;
+  width: 850px;
   margin: auto;
   padding: 1rem;
 }
@@ -24,7 +30,6 @@ a {
 a:hover {
   cursor: pointer;
   text-decoration: underline;
-  color: #0000ee;
 }
 
 .profile {
@@ -64,10 +69,12 @@ a:hover {
 }
 
 .projects__category a:first-child {
-  color: #0000ee;
+  color: #457B9D;
+  text-decoration: underline;
 }
 
-.projects__category a {
+.projects__category a:hover {
+  color: #457B9D;
   text-decoration: underline;
 }
 
@@ -94,6 +101,11 @@ a:hover {
   border-radius: .8rem;
 }
 
+.card:hover {
+  border-color: #457B9D;
+}
+
+
 .card:nth-child(1),
 .card:nth-child(2) {
   margin-top: 1.3rem;
@@ -101,12 +113,23 @@ a:hover {
 
 .card__link {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  color: #457B9D;
 }
 
-.card__link__preview {
+.card__link__demo {
   display: flex;
+  justify-content: center;
   gap: 10px;
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-color: #E3ECF3;
+  color: var(--clr-blue);
+}
+
+.card__link__code {
+  color: var(--clr-blue-accent);
 }
 
 .icon {
@@ -115,5 +138,4 @@ a:hover {
 
 .icon.preview {
   width: 15px;
-  margin-bottom: 5px;
 }
