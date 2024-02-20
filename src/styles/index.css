@@ -31,8 +31,6 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: var(--clr-blue-accent);
-  text-decoration: underline;
 }
 
 .page {
@@ -87,14 +85,20 @@ a:hover {
   font-size: 1.1rem;
 }
 
+.projects__category a {
+  padding-bottom: 2px;
+  color: var(--clr-gray);
+  border-bottom: 2px solid white;
+}
+
 .projects__category a:first-child {
   color: var(--clr-blue-accent);
-  text-decoration: underline;
+  border-bottom: 2px solid var(--clr-blue-accent);
 }
 
 .projects__category a:hover {
   color: var(--clr-blue-accent);
-  text-decoration: underline;
+  border-bottom: 2px solid var(--clr-blue-accent);
 }
 
 .projects__category span {

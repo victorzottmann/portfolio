@@ -1,6 +1,6 @@
 export const programmingProjects = [
   {
-    title: "Victor's Car Rental",
+    title: "Car Rental System",
     description: "A car rental website built with HTML, CSS, and JavaScript.",
     preview: "https://victorz-car-rental.netlify.app/",
     repo: "https://github.com/victorzottmann/car-rental-js",
