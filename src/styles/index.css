@@ -91,7 +91,7 @@ a:hover {
   border-bottom: 2px solid white;
 }
 
-.projects__category a:first-child {
+.projects__category a.active {
   color: var(--clr-blue-accent);
   border-bottom: 2px solid var(--clr-blue-accent);
 }

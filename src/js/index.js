@@ -1,5 +1,7 @@
 import { programmingProjects, audioProjects } from "./data.js";
 
+const defaultCategory = "Programming Projects";
+
 document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.querySelector(".projects");
   let scrollPosition = 0;
@@ -10,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     projectsContainer.innerHTML = "";
 
     const projects =
-      category === "Programming Projects" ? programmingProjects : audioProjects;
+      category === defaultCategory ? programmingProjects : audioProjects;
 
     projects.forEach((project) => {
       const card = `
@@ -39,13 +41,27 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, scrollPosition);
   }
 
-  document.querySelectorAll(".projects__category__link").forEach((link) => {
-    link.addEventListener("click", (e) => {
-      const category = e.target.textContent;
-      showProjects(category);
-    });
-  });
+  function makeActive(clickedLink) {
+    const links = document.querySelectorAll(".projects__category__link");
+    links.forEach((link) => link.classList.remove("active"));
+    clickedLink.classList.add("active");
+  }
 
-  // default state
-  showProjects("Programming Projects");
+  function handleProjectCategoryClick(e) {
+    if (e.target.classList.contains("projects__category__link")) {
+      const link = e.target;
+      const category = e.target.textContent;
+      makeActive(link);
+      showProjects(category);
+    }
+  }
+
+  function setDefaultProjects() {
+    showProjects(defaultCategory);
+  }
+
+  const projectsCategory = document.querySelector(".projects__category");
+  projectsCategory.addEventListener("click", handleProjectCategoryClick);
+
+  setDefaultProjects();
 });
