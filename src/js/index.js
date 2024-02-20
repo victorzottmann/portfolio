@@ -3,7 +3,7 @@ import { programmingProjects, audioProjects } from "./projects.js";
 const defaultCategory = "Programming Projects";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectsContainer = document.querySelector(".projects");
+  const projectsContainer = document.querySelector(".projects-container");
   let scrollPosition = 0;
 
   function showProjects(category) {
@@ -41,17 +41,17 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo(0, scrollPosition);
   }
 
-  function makeActive(clickedLink) {
-    const links = document.querySelectorAll(".projects__category__link");
-    links.forEach((link) => link.classList.remove("active"));
-    clickedLink.classList.add("active");
+  function makeActive(clickedItem) {
+    const listItems = document.querySelectorAll(".projects-nav__item");
+    listItems.forEach((item) => item.classList.remove("active"));
+    clickedItem.classList.add("active");
   }
 
   function handleProjectCategoryClick(e) {
-    if (e.target.classList.contains("projects__category__link")) {
-      const link = e.target;
+    if (e.target.classList.contains("projects-nav__item")) {
+      const item = e.target;
       const category = e.target.textContent;
-      makeActive(link);
+      makeActive(item);
       showProjects(category);
     }
   }
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     showProjects(defaultCategory);
   }
 
-  const projectsCategory = document.querySelector(".projects__category");
+  const projectsCategory = document.querySelector(".projects-nav__list");
   projectsCategory.addEventListener("click", handleProjectCategoryClick);
 
   setDefaultProjects();

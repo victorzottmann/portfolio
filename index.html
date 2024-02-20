@@ -44,12 +44,16 @@
       </section>
       <section class="section__projects">
         <h2>Projects</h2>
-        <p class="projects__category">
-          <a class="projects__category__link active" href="#">Programming Projects</a>
-          <span>&middot;</span>
-          <a class="projects__category__link" href="#">Audio Projects</a>
-        </p>
-        <div class="projects"></div>
+        <nav class="projects-nav">
+          <!-- projects__category -->
+          <ul class="projects-nav__list">
+            <!-- projects__category__item -->
+            <li class="projects-nav__item active">Programming Projects</li>
+            <span class="projects-nav__separator">&middot;</span>
+            <li class="projects-nav__item">Audio Projects</li>
+          </ul>
+        </nav>
+        <div class="projects-container"></div>
       </section>
     </main>
   </div>
