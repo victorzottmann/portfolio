@@ -4,7 +4,10 @@ export const programmingProjects = [
     description: "A car rental website built with HTML, CSS, and JavaScript.",
     preview: "https://victorz-car-rental.netlify.app/",
     repo: "https://github.com/victorzottmann/car-rental-js",
-    video: false,
+    video: {
+      available: false,
+      url: "#",
+    },
   },
   {
     title: "Arduino Memory Game",
@@ -12,7 +15,10 @@ export const programmingProjects = [
       "A physical memory game built with analog and digital components, and an Arduino board.",
     preview: "#",
     repo: "https://github.com/victorzottmann/arduino-memory-game",
-    video: true,
+    video: {
+      available: true,
+      url: "https://youtu.be/zJscLV0aoM8",
+    },
   },
   {
     title: "Hospital Management System",
@@ -20,21 +26,30 @@ export const programmingProjects = [
       "A CLI program built in C# that manages existing or new doctor appointments.",
     preview: "#",
     repo: "https://github.com/victorzottmann/hospital-system",
-    video: true,
+    video: {
+      available: true,
+      url: "#",
+    },
   },
   {
     title: "DOTNET Cinemas",
     description: "A Movie ticket booking app built with Windows Forms and C#.",
     preview: "#",
     repo: "https://github.com/uts-dotnet/movie-ticket-app",
-    video: true,
+    video: {
+      available: true,
+      url: "#",
+    },
   },
   {
     title: "Book Shop REST API",
     description: "A REST API server for a hypothetical book shop website.",
     preview: "#",
     repo: "https://github.com/victorzottmann/book-shop-server",
-    video: true,
+    video: {
+      available: true,
+      url: "#",
+    },
   },
 ];
 
@@ -45,6 +60,9 @@ export const audioProjects = [
       "A CLI program to facilitate the calculation of room acoustics parameters.",
     preview: "#",
     repo: "https://github.com/victorzottmann/sound-level-calculator",
-    video: true,
+    video: {
+      available: true,
+      link: "#",
+    },
   },
 ];

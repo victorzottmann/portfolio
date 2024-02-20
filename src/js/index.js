@@ -1,4 +1,4 @@
-import { programmingProjects, audioProjects } from "./data.js";
+import { programmingProjects, audioProjects } from "./projects.js";
 
 const defaultCategory = "Programming Projects";
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <a class="card__link__demo" href="${
               project.preview
             }" target="_blank" rel="noopener noreferrer">
-              ${project.video ? "Watch Demo" : "Preview Site"}
+              ${project.video.available ? "Watch Demo" : "Preview Site"}
             </a>
             <a class="card__link__code" href="${
               project.repo
