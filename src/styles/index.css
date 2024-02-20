@@ -1,6 +1,7 @@
 :root {
   --clr-blue-accent: #457B9D;
   --clr-blue-bg: #E3ECF3;
+  --clr-blue-bg-dark: #CBDCE9;
   --clr-gray: #71717A;
   --clr-orange: #F35627;
 }
@@ -38,6 +39,7 @@ a:hover {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .profile {
@@ -145,15 +147,30 @@ a:hover {
 .card__link__preview {
   display: flex;
   justify-content: center;
-  gap: 10px;
   border-radius: 100px;
   padding: 10px 20px;
-  background-color: var(--clr-blue-bg);
   color: var(--clr-blue-accent);
+  background-color: var(--clr-blue-bg);
+  transition: background-color .1s;
+}
+
+.card__link__preview:hover {
+  background-color: var(--clr-blue-bg-dark);
+  border: none;
 }
 
 .card__link__code {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 2px solid white;
   color: var(--clr-blue-accent);
+  transition: border-bottom .1s;
+}
+
+.card__link__code:hover {
+  border-bottom: 2px solid var(--clr-blue-accent);
 }
 
 .icon {
@@ -166,8 +183,8 @@ a:hover {
 
 @media (max-width: 768px) {
   .page {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .projects {
@@ -191,15 +208,12 @@ a:hover {
   .card:not(:last-child)::after {
     content: "";
     position: relative;
-    width: 100%;
-    bottom: -2.1rem;
+    width: calc(100% + 4rem);
+    left: 0;
+    bottom: -2.2rem;
     height: 1px;
     background-color: lightgray;
   }
-
-  /* .card {
-    flex-basis: 100%;
-  } */
 
   .card__link {
     justify-content: flex-start;
@@ -221,29 +235,8 @@ a:hover {
     gap: 2rem;
   }
 
-  .card {
-    border-radius: 0;
-    padding: 1.2rem 0;
-    margin: 0;
-    height: 100%;
-    border: none;
-  }
-
-  .card__title,
-  .card__description {
-    margin-bottom: 1.5rem;
-  }
-
-  .card:not(:last-child)::after {
-    content: "";
-    position: relative;
-    width: 100%;
-    bottom: -2.1rem;
-    height: 1px;
-    background-color: lightgray;
-  }
-
   .card__link {
+    gap: 0;
     justify-content: space-between;
   }
 }
@@ -270,7 +263,9 @@ a:hover {
   .projects__category span {
     display: none;
   }
+}
 
+@media (max-width: 320px) {
   .fa-arrow-right {
     display: none;
   }
