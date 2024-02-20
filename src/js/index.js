@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3 class="card__title">${project.title}</h3>
           <p class="card__description">${project.description}</p>
           <div class="card__link">
-            <a class="card__link__demo" href="${
+            <a class="card__link__preview" href="${
               project.preview
             }" target="_blank" rel="noopener noreferrer">
               ${project.video.available ? "Watch Demo" : "Preview Site"}
