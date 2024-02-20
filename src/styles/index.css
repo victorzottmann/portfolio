@@ -28,10 +28,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  cursor: pointer;
-}
-
 .page {
   background-color: white;
   padding: 1rem 2rem;
@@ -80,6 +76,12 @@ a:hover {
 .social-media__link {
   text-decoration: none;
   color: black;
+}
+
+.social-media__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--clr-blue-accent);
 }
 
 .projects-nav__list {
