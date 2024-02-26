@@ -16,24 +16,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     projects.forEach((project) => {
       const card = `
-        <div class="card">
-          <h3 class="card__title">${project.title}</h3>
-          <p class="card__description">${project.description}</p>
-          <div class="card__link">
-            <a class="card__link__preview" href="${
-              project.preview
-            }" target="_blank" rel="noopener noreferrer">
-              ${project.video.available ? "Watch Demo" : "Preview Site"}
-            </a>
-            <a class="card__link__code" href="${
-              project.repo
-            }" target="_blank" rel="noopener noreferrer">
-              View Code
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
+      <div class="card">
+        <h3 class="card__title">${project.title}</h3>
+        <p class="card__description">${project.description}</p>
+        <div class="card__link">
+          ${
+            project.website.available
+              ? `<a 
+                    class="card__link__website" 
+                    href="${project.website}" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    Preview Site
+                  </a>`
+              : ""
+          }
+          <a 
+            class="card__link__code" 
+            href="${project.code}" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            View Code
+          </a>
         </div>
-      `;
+      </div>
+    `;
 
       projectsContainer.insertAdjacentHTML("beforeend", card);
     });
