@@ -1,6 +1,8 @@
 import { programmingProjects, audioProjects } from "./projects.js";
 
 const defaultCategory = "Programming Projects";
+const textForWebsite = "Preview Site";
+const textForVideo = "Watch Demo";
 
 document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.querySelector(".projects-container");
@@ -24,11 +26,20 @@ document.addEventListener("DOMContentLoaded", () => {
               project.website.available
                 ? `<a 
                       class="card__link__website" 
-                      href="${project.website}" 
+                      href="${project.website.url}" 
                       target="_blank" 
                       rel="noopener noreferrer"
                     >
-                      Preview Site
+                      ${textForWebsite}
+                    </a>`
+                : project.video.available
+                ? `<a 
+                      class="card__link__website" 
+                      href="${project.video.url}" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      ${textForVideo}
                     </a>`
                 : ""
             }

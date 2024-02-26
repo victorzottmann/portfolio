@@ -22,7 +22,7 @@ export const programmingProjects = [
       url: "",
     },
     video: {
-      available: false,
+      available: true,
       url: "https://youtu.be/zJscLV0aoM8",
     },
   },
