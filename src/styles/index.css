@@ -7,6 +7,7 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
 }
 
@@ -48,8 +49,9 @@ a {
   line-height: 1.5;
 }
 
-.profile__title {
-  font-size: 1.2rem;
+.profile__title h1 {
+  font-size: 2.1rem;
+  font-weight: 500;
 }
 
 .profile__title p {
@@ -127,8 +129,8 @@ a {
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 2rem;
-  height: 12.5rem;
-  padding: 1.5rem;
+  height: 13rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   border: 1px solid lightgray;
   border-radius: .8rem;
 }

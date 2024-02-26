@@ -42,7 +42,8 @@ export const programmingProjects = [
   },
   {
     title: "DOTNET Cinemas",
-    description: "A Movie ticket booking app built with Windows Forms and C#.",
+    description:
+      "A Movie ticket booking app built with Windows Forms and C#. The project was collaboratively developed with a teammate and documented through GitHub issues.",
     code: "https://github.com/uts-dotnet/movie-ticket-app",
     website: {
       available: false,
@@ -53,9 +54,6 @@ export const programmingProjects = [
       url: "",
     },
   },
-];
-
-export const audioProjects = [
   {
     title: "Sound Level Calculator",
     description:
@@ -70,5 +68,6 @@ export const audioProjects = [
       link: "",
     },
   },
-  {},
 ];
+
+export const audioProjects = [{}];
