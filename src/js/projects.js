@@ -70,4 +70,61 @@ export const programmingProjects = [
   },
 ];
 
-export const audioProjects = [{}];
+export const audioProjects = [
+  {
+    title: "Series of Audio Tutorials",
+    description:
+      "39 tutorials on audio post production hosted on my personal YouTube channel.",
+    url: "https://www.youtube.com/@VictorZottmann",
+  },
+  {
+    title: "Accessibility: A Practical Perspective on Inclusion",
+    description: "Academic book chapter based on the audio tutorials.",
+    url: "https://www.taylorfrancis.com/chapters/edit/10.4324/9780429020780-14/accessibility-victor-zottmann?context=ubx&refId=0827869d-646a-46de-ab38-f2767b97bfe7",
+  },
+];
+
+export const projects = {
+  programmingProjects: [
+    {
+      title: "Car Rental System",
+      description: "A car rental website built with HTML, CSS, and JavaScript.",
+      code: "https://github.com/victorzottmann/car-rental-js",
+      website: {
+        available: true,
+        url: "https://victorz-car-rental.netlify.app/",
+      },
+      video: {
+        available: false,
+        url: "",
+      },
+    },
+    {
+      title: "Arduino Memory Game",
+      description:
+        "A physical memory game built with analog and digital components, and an Arduino board.",
+      code: "https://github.com/victorzottmann/arduino-memory-game",
+      website: {
+        available: false,
+        url: "",
+      },
+      video: {
+        available: true,
+        url: "https://youtu.be/zJscLV0aoM8",
+      },
+    },
+  ],
+  audioProjects: [
+    {
+      title: "Series of Audio Tutorials",
+      description:
+        "39 tutorials on audio post production hosted on my personal YouTube channel.",
+      url: "https://www.youtube.com/@VictorZottmann",
+    },
+    {
+      title: "Accessibility: A Practical Perspective on Inclusion",
+      description: "Academic book chapter based on the audio tutorials.",
+      url: "https://www.taylorfrancis.com/chapters/edit/10.4324/9780429020780-14/accessibility-victor-zottmann?context=ubx&refId=0827869d-646a-46de-ab38-f2767b97bfe7",
+    },
+  ],
+};

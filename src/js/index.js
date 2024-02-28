@@ -1,8 +1,7 @@
 import { programmingProjects, audioProjects } from "./projects.js";
+import { showProgrammingProject, showAudioProject } from "./utils.js";
 
 const defaultCategory = "Programming Projects";
-const textForWebsite = "Preview Site";
-const textForVideo = "Watch Demo";
 
 document.addEventListener("DOMContentLoaded", () => {
   const projectsContainer = document.querySelector(".projects-container");
@@ -17,43 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
       category === defaultCategory ? programmingProjects : audioProjects;
 
     projects.forEach((project) => {
-      const card = `
-        <div class="card">
-          <h3 class="card__title">${project.title}</h3>
-          <p class="card__description">${project.description}</p>
-          <div class="card__link">
-            ${
-              project.website.available
-                ? `<a 
-                      class="card__link__website" 
-                      href="${project.website.url}" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      ${textForWebsite}
-                    </a>`
-                : project.video.available
-                ? `<a 
-                      class="card__link__website" 
-                      href="${project.video.url}" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                    >
-                      ${textForVideo}
-                    </a>`
-                : ""
-            }
-            <a 
-              class="card__link__code" 
-              href="${project.code}" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              View Code
-            </a>
-          </div>
-        </div>
-      `;
+      let card;
+
+      if (category === defaultCategory) {
+        card = showProgrammingProject(project);
+      } else {
+        card = showAudioProject(project);
+      }
 
       projectsContainer.insertAdjacentHTML("beforeend", card);
     });
