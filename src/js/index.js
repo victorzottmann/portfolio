@@ -4,12 +4,8 @@ import { showProgrammingProject, showAudioProject } from "./utils.js";
 const defaultCategory = "Programming Projects";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const projectsContainer = document.querySelector(".projects-container");
-  let scrollPosition = 0;
-
   function showProjects(category) {
-    scrollPosition = window.scrollY;
-
+    const projectsContainer = document.querySelector(".projects-container");
     projectsContainer.innerHTML = "";
 
     const projects =
@@ -26,8 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       projectsContainer.insertAdjacentHTML("beforeend", card);
     });
-
-    window.scrollTo(0, scrollPosition);
   }
 
   function makeActive(clickedItem) {

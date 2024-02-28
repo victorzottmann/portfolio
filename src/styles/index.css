@@ -9,6 +9,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
+  overflow-y: scroll;
 }
 
 header,
@@ -74,18 +75,17 @@ a {
   align-items: center;
   gap: 10px;
   padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
   cursor: pointer;
   text-decoration: none;
-  color: black;
-}
-
-.social-media__platform:hover {
-  border-bottom: 2px solid var(--clr-blue-accent);
 }
 
 .social-media__link {
+  color: black;
+}
+
+.social-media__link:hover {
   color: var(--clr-blue-accent);
+  text-decoration: underline;
 }
 
 .projects-nav__list {
@@ -99,7 +99,7 @@ a {
 
 .projects-nav__item {
   padding-bottom: 2px;
-  color: var(--clr-gray);
+  color: var(--clr-blue-accent);
   border-bottom: 2px solid white;
 }
 
@@ -152,7 +152,8 @@ a {
   color: var(--clr-blue-accent);
 }
 
-.card__link__website {
+.card__link__website,
+.card__link__code {
   display: flex;
   justify-content: center;
   border-radius: 100px;
@@ -162,31 +163,10 @@ a {
   transition: background-color .1s;
 }
 
-.card__link__website:hover {
+.card__link__website:hover,
+.card__link__code:hover {
   background-color: var(--clr-blue-bg-dark);
   border: none;
-}
-
-.card__link__code {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 0;
-  border-bottom: 2px solid white;
-  color: var(--clr-blue-accent);
-  transition: border-bottom .1s;
-}
-
-.card__link__code:hover {
-  border-bottom: 2px solid var(--clr-blue-accent);
-}
-
-.icon {
-  width: 25px;
-}
-
-.icon.preview {
-  width: 15px;
 }
 
 @media (max-width: 768px) {
@@ -216,7 +196,7 @@ a {
   .card:not(:last-child)::after {
     content: "";
     position: relative;
-    width: calc(100% + 4rem);
+    width: 100%;
     left: 0;
     bottom: -2.2rem;
     height: 1px;
@@ -230,6 +210,20 @@ a {
 }
 
 @media (max-width: 420px) {
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  a,
+  li {
+    font-size: 1.1rem;
+  }
+
   .page {
     padding-left: 1rem;
     padding-right: 1rem;
