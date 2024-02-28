@@ -1,4 +1,6 @@
 :root {
+  --clr-white-bg: #F3F2F0;
+
   /* Contrast ratio of 7.48:1 (compliant with WCAG AA and AAA for small and large texts */
   /* On hover, the contrast ratio between blue-accent and blue-bg-dark also complies with WCAG  */
   --clr-blue-accent: #023e8a;
@@ -11,7 +13,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: whitesmoke;
+  background-color: var(--clr-white-bg);
   overflow-y: scroll;
 }
 
