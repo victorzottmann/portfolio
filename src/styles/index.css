@@ -73,16 +73,18 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.social-media__link {
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
   text-decoration: none;
   color: black;
 }
 
-.social-media__link:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.social-media__platform:hover {
+  border-bottom: 2px solid var(--clr-blue-accent);
+}
+
+.social-media__link {
   color: var(--clr-blue-accent);
 }
 
