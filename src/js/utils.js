@@ -1,5 +1,6 @@
 const textForWebsite = "Preview Site";
 const textForVideo = "Watch Demo";
+const textForCode = "View Code";
 
 export function showProgrammingProject(project) {
   const card = `
@@ -34,7 +35,7 @@ export function showProgrammingProject(project) {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          View Code
+          ${textForCode}
         </a>
       </div>
     </div>
