@@ -6,11 +6,11 @@ export function showProgrammingProject(project) {
     <div class="card">
       <h3 class="card__title">${project.title}</h3>
       <p class="card__description">${project.description}</p>
-      <div class="card__link">
+      <div class="card__links__group">
         ${
           project.website.available
             ? `<a 
-                  class="card__link__website" 
+                  class="card__link" 
                   href="${project.website.url}" 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export function showProgrammingProject(project) {
                 </a>`
             : project.video.available
             ? `<a 
-                  class="card__link__website" 
+                  class="card__link" 
                   href="${project.video.url}" 
                   target="_blank" 
                   rel="noopener noreferrer"
@@ -29,7 +29,7 @@ export function showProgrammingProject(project) {
             : ""
         }
         <a 
-          class="card__link__code" 
+          class="card__link" 
           href="${project.code}" 
           target="_blank" 
           rel="noopener noreferrer"
@@ -48,9 +48,9 @@ export function showAudioProject(project) {
     <div class="card">
       <h3 class="card__title">${project.title}</h3>
       <p class="card__description">${project.description}</p>
-      <div class="card__link">
+      <div class="card__links__group">
         <a 
-          class="card__link__website" 
+          class="card__link" 
           href="${project.url}" 
           target="_blank" 
           rel="noopener noreferrer"

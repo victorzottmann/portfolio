@@ -88,6 +88,12 @@ a {
   text-decoration: underline;
 }
 
+.section__about a {
+  color: var(--clr-blue-accent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .projects-nav__list {
   display: flex;
   align-items: center;
@@ -127,12 +133,12 @@ a {
 
 .card {
   display: flex;
-  flex-basis: calc(50% - 1rem);
   flex-direction: column;
   justify-content: space-between;
+  flex-basis: calc(50% - 1rem);
   margin-bottom: 2rem;
-  height: 13rem;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  height: 12.5rem;
+  padding: 1.5rem;
   border: 1px solid lightgray;
   border-radius: .8rem;
 }
@@ -145,15 +151,14 @@ a {
   color: var(--clr-gray);
 }
 
-.card__link {
+.card__links__group {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--clr-blue-accent);
 }
 
-.card__link__website,
-.card__link__code {
+.card__link {
   display: flex;
   justify-content: center;
   border-radius: 100px;
@@ -163,10 +168,15 @@ a {
   transition: background-color .1s;
 }
 
-.card__link__website:hover,
-.card__link__code:hover {
+.card__link:hover {
   background-color: var(--clr-blue-bg-dark);
   border: none;
+}
+
+@media (max-width: 920px) {
+  .card {
+    height: 14rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -203,7 +213,7 @@ a {
     background-color: lightgray;
   }
 
-  .card__link {
+  .card__links {
     justify-content: flex-start;
     gap: 5.3rem;
   }
@@ -237,7 +247,7 @@ a {
     gap: 2rem;
   }
 
-  .card__link {
+  .card__links {
     gap: 0;
     justify-content: space-between;
   }
