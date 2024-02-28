@@ -69,6 +69,19 @@ export const { programmingProjects, audioProjects } = {
         link: "",
       },
     },
+    {
+      title: "My Personal Website",
+      description: "The source code of this portfolio.",
+      code: "https://github.com/victorzottmann/portfolio",
+      website: {
+        available: false,
+        url: "",
+      },
+      video: {
+        available: false,
+        url: "",
+      },
+    },
   ],
   audioProjects: [
     {
