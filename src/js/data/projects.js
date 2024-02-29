@@ -87,7 +87,7 @@ export const { programmingProjects, audioProjects } = {
     {
       title: "Series of Audio Tutorials",
       description:
-        "39 tutorials on audio post production hosted on my personal YouTube channel.",
+        "40 tutorials on audio post production hosted on my personal YouTube channel.",
       url: "https://www.youtube.com/playlist?list=PLVyjgr6ztBHiasRZl-e3btxTTNr8Xdnlb",
     },
     {
