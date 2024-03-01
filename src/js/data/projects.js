@@ -1,19 +1,6 @@
 export const { programmingProjects, audioProjects } = {
   programmingProjects: [
     {
-      title: "Car Rental System",
-      description: "A car rental website built with HTML, CSS, and JavaScript.",
-      code: "https://github.com/victorzottmann/car-rental-js",
-      website: {
-        available: true,
-        url: "https://victorz-car-rental.netlify.app/",
-      },
-      video: {
-        available: false,
-        url: "",
-      },
-    },
-    {
       title: "Arduino Memory Game",
       description:
         "A physical memory game built with analog and digital components, and an Arduino board.",
@@ -25,6 +12,19 @@ export const { programmingProjects, audioProjects } = {
       video: {
         available: true,
         url: "https://youtu.be/zJscLV0aoM8",
+      },
+    },
+    {
+      title: "Car Rental System",
+      description: "A car rental website built with HTML, CSS, and JavaScript.",
+      code: "https://github.com/victorzottmann/car-rental-js",
+      website: {
+        available: true,
+        url: "https://victorz-car-rental.netlify.app/",
+      },
+      video: {
+        available: false,
+        url: "",
       },
     },
     {
