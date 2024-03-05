@@ -58,7 +58,7 @@ export const { programmingProjects, audioProjects } = {
     {
       title: "Sound Level Calculator",
       description:
-        "A CLI program to facilitate the calculation of room acoustics parameters.",
+        "A CLI program built in Ruby to facilitate the calculation of room acoustics parameters.",
       code: "https://github.com/victorzottmann/sound-level-calculator",
       website: {
         available: false,
