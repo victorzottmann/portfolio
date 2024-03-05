@@ -128,6 +128,11 @@ footer p {
   text-decoration: underline;
 }
 
+.section__projects {
+  min-height: 852px;
+  margin-bottom: 0;
+}
+
 .projects-nav__list {
   display: flex;
   align-items: center;
@@ -237,7 +242,7 @@ footer p {
     margin-bottom: 1.5rem;
   }
 
-  .card:not(:last-child)::after {
+  .card::after {
     content: "";
     position: relative;
     width: 100%;
@@ -256,6 +261,10 @@ footer p {
   .projects-nav__list,
   .card__link {
     font-weight: 500;
+  }
+
+  footer {
+    border-top: none;
   }
 }
 
