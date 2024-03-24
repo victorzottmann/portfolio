@@ -292,6 +292,10 @@ footer p {
     padding-right: 1rem;
   }
 
+  .social-media {
+    gap: 1.2rem;
+  }
+
   .projects-nav__list {
     flex-direction: column;
     align-items: baseline;
@@ -299,7 +303,6 @@ footer p {
     margin-left: 1.5rem;
     gap: 1.5rem;
   }
-
 
   .projects-nav__item {
     font-size: 1.2rem;
@@ -310,7 +313,6 @@ footer p {
     display: none;
   }
 
-  .social-media,
   .projects-container {
     gap: 2rem;
   }
