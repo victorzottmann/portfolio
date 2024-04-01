@@ -14,6 +14,20 @@ export const { programmingProjects, audioProjects } = {
       },
     },
     {
+      title: "Book Shop REST API Server",
+      description:
+        "A REST API server built with Node.js, Express.js, and MongoDB.",
+      code: "https://github.com/victorzottmann/book-shop-server",
+      website: {
+        available: false,
+        url: "",
+      },
+      video: {
+        available: false,
+        url: "",
+      },
+    },
+    {
       title: "Arduino Memory Game",
       description:
         "A physical memory game built with analog and digital components, and an Arduino board.",
@@ -32,20 +46,6 @@ export const { programmingProjects, audioProjects } = {
       description:
         "A CLI program built in C# that manages existing or new doctor appointments.",
       code: "https://github.com/victorzottmann/hospital-system",
-      website: {
-        available: false,
-        url: "",
-      },
-      video: {
-        available: false,
-        url: "",
-      },
-    },
-    {
-      title: "DOTNET Cinemas",
-      description:
-        "A Movie ticket booking app built with Windows Forms and C#. The project was developed with a teammate and organized using GitHub issues.",
-      code: "https://github.com/uts-dotnet/movie-ticket-app",
       website: {
         available: false,
         url: "",
