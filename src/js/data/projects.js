@@ -14,13 +14,12 @@ export const { programmingProjects, audioProjects } = {
       },
     },
     {
-      title: "Book Shop REST API Server",
-      description:
-        "A REST API server built with Node.js, Express.js, and MongoDB.",
-      code: "https://github.com/victorzottmann/book-shop-server",
+      title: "Landing Page",
+      description: "A landing page built with HTML and CSS",
+      code: "https://github.com/victorzottmann/css-landing-page",
       website: {
-        available: false,
-        url: "",
+        available: true,
+        url: "https://victorzottmann.github.io/css-landing-page/",
       },
       video: {
         available: false,
@@ -42,6 +41,20 @@ export const { programmingProjects, audioProjects } = {
       },
     },
     {
+      title: "Book Shop REST API Server",
+      description:
+        "A REST API server built with Node.js, Express.js, and MongoDB.",
+      code: "https://github.com/victorzottmann/book-shop-server",
+      website: {
+        available: false,
+        url: "",
+      },
+      video: {
+        available: false,
+        url: "",
+      },
+    },
+    {
       title: "Hospital Management System",
       description:
         "A CLI program built in C# that manages existing or new doctor appointments.",
@@ -53,20 +66,6 @@ export const { programmingProjects, audioProjects } = {
       video: {
         available: false,
         url: "",
-      },
-    },
-    {
-      title: "Sound Level Calculator",
-      description:
-        "A CLI program built in Ruby to facilitate the calculation of room acoustics parameters.",
-      code: "https://github.com/victorzottmann/sound-level-calculator",
-      website: {
-        available: false,
-        url: "",
-      },
-      video: {
-        available: false,
-        link: "",
       },
     },
     {
