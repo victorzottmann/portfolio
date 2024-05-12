@@ -15,7 +15,7 @@ export const { programmingProjects, audioProjects } = {
     },
     {
       title: "Landing Page",
-      description: "A landing page built with HTML and CSS",
+      description: "A landing page built with HTML and CSS.",
       code: "https://github.com/victorzottmann/css-landing-page",
       website: {
         available: true,
