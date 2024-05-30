@@ -55,10 +55,10 @@ export const { programmingProjects, audioProjects } = {
       },
     },
     {
-      title: "Hospital Management System",
+      title: "Rock Paper Scissors",
       description:
-        "A CLI program built in C# that manages existing or new doctor appointments.",
-      code: "https://github.com/victorzottmann/hospital-system",
+        "A rock paper scissors game built with HTML, CSS, and JavaScript. The game is only available in desktop format (for now).",
+      code: "https://github.com/victorzottmann/rock-paper-scissors",
       website: {
         available: false,
         url: "",
