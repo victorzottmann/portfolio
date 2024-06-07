@@ -2,7 +2,7 @@ export const { programmingProjects, audioProjects } = {
   programmingProjects: [
     {
       title: "Car Rental System",
-      description: "A car rental website built with HTML, CSS, and JavaScript.",
+      description: "A responsive car rental website built with HTML, CSS, and JavaScript.",
       code: "https://github.com/victorzottmann/car-rental-js",
       website: {
         available: true,
@@ -14,12 +14,12 @@ export const { programmingProjects, audioProjects } = {
       },
     },
     {
-      title: "Landing Page",
-      description: "A landing page built with HTML and CSS.",
-      code: "https://github.com/victorzottmann/css-landing-page",
+      title: "Etch A Sketch (Desktop)",
+      description: "A desktop web app based on the popular drawing toy Etch A Sketch, built with HTML, CSS, and JavaScript.",
+      code: "https://github.com/victorzottmann/etch-a-sketch",
       website: {
         available: true,
-        url: "https://victorzottmann.github.io/css-landing-page/",
+        url: "https://victorzottmann.github.io/etch-a-sketch/",
       },
       video: {
         available: false,
@@ -43,7 +43,7 @@ export const { programmingProjects, audioProjects } = {
     {
       title: "Book Shop REST API Server",
       description:
-        "A REST API server built with Node.js, Express.js, and MongoDB.",
+        "A simple REST API server built with Node.js, Express.js, and MongoDB.",
       code: "https://github.com/victorzottmann/book-shop-server",
       website: {
         available: false,
@@ -55,7 +55,7 @@ export const { programmingProjects, audioProjects } = {
       },
     },
     {
-      title: "Rock Paper Scissors",
+      title: "Rock Paper Scissors (Desktop)",
       description:
         "A rock paper scissors game built with HTML, CSS, and JavaScript. The game is only available in desktop format (for now).",
       code: "https://github.com/victorzottmann/rock-paper-scissors",
